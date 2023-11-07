@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <div class="logo">
+                    <h1>My Portfolio</h1>
+                </div>
+                
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container" id="home">
+            <h3>Hello</h3>
+            <h2>I am Tanmana Das</h2>
+            <span class="text first-text">I'm a </span>
+            <span class="text sec-text">Freelancer</span>
+            <div class="buttons">
+                <div class="hireme">Hire Me</div>
+                <a download href="./Tanmana Das Resume.pdf" class="cv">Download CV</a>
+            </div>
+        </div>
+        <script>
+            const text=document.querySelector(".sec-text");
+            const textload=()=>{
+                setTimeout(()=>{
+                    text.textContent="Coder"
+                },0);
+                setTimeout(()=>{
+                    text.textContent="Learner"
+                },4000);
+                setTimeout(()=>{
+                    text.textContent="Freelancer"
+                },8000);
+                setTimeout(()=>{
+                    text.textContent="Designer"
+                },12000);
+                setTimeout(()=>{
+                    text.textContent="Developer"
+                },16000);
+            }
+            textload();
+            setInterval(textload,20000);
+        </script>
+        <div class="image">
+           <img src="image/portfolio image.jpeg" alt="">
+        </div>
+    </main>
+    <div class="about" id="about">
+        <h4>Get to know more</h4>
+        <h2>About me</h2>
+        <div class="aboutbox">
+            <div class="aboutimage">
+                <img src="image/aboutiimage.jpg" alt="">
+            </div>
+            <div class="abouttext">
+                <div class="textbox">
+                    <div class="textbox1">
+                        <i class="fa-solid fa-medal"></i>
+                        <h2>Experience</h2>
+                        <h3>Frontend Developer</h3>
+                    </div>
+                    <div class="textbox2">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h2>Education</h2>
+                        <h3>B.Tech in CSE<br>CGPA 9.7</h3>
+                    </div>
+                </div>
+                <p style="color: white;">I am 21 years old ,currently pursuing my B.Tech in Computer Science and Engineering from Guru Nanak Institute of Technology.
+                    I am well-versed in HTML,CSS,Javascript and other cutting edge frameworks and libraries which allow me to 
+                    implement interactive features.</p>
+            </div>
+        </div>
+    </div>
+    <div class="skills" id="skills">
+        <h4>Explore My</h4>
+        <h2>Skills</h2>
+        <div class="skillbox">
+            <div class="frontend">
+                <h3 style="font-size: 30px;text-align: center;color:#010718;margin-block: 20px;">Frontend Development</h3>
+                <div class="box1">
+                    <div class="subbox1">
+                        <div class="subsubbox1">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <h3 style="letter-spacing: 2px;font-weight: 200;margin-left: -30px;">HTML</h3>
+                        </div>
+                        <div class="subsubbox2">Experienced</div>
+                    </div>
+                    <div class="subbox2">
+                        <div class="subsubbox1">
+                            <i class="fa-solid fa-circle-check"style="margin-left: -20px;"></i>
+                            <h3 style="letter-spacing: 2px;font-weight: 200;margin-left: -65px;">CSS</h3>
+                        </div>
+                        <div class="subsubbox2">Experienced</div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="subbox1">
+                        <div class="subsubbox1">
+                            <i class="fa-solid fa-circle-check "style="margin-left: -10px;"></i>
+                            <h3 style="letter-spacing: 2px;font-weight: 200;margin-left: -55px;">SASS</h3>
+                        </div>
+                        <div class="subsubbox2">Basic</div>
+                    </div>
+                    <div class="subbox2">
+                        <div class="subsubbox1">
+                            <i class="fa-solid fa-circle-check"style="margin-left: 25px;"></i>
+                            <h3 style="letter-spacing: 2px;font-weight: 200;margin-left: 20px;">Javascript</h3>
+                        </div>
+                        <div class="subsubbox2">Experienced</div>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div class="subbox1">
+                        <div class="subsubbox1">
+                            <i class="fa-solid fa-circle-check"style="margin-left: 35px;"></i>
+                            <h3 style="letter-spacing: 2px;font-weight: 200;margin-left: 18px;">Typescript</h3>
+                        </div>
+                        <div class="subsubbox2">Basic</div>
+                    </div>
+                    <div class="subbox2">
+                        <div class="subsubbox1">
+                            <i class="fa-solid fa-circle-check"style="margin-left: 20px;"></i>
+                            <h3 style="letter-spacing: 1px;font-weight: 200;margin-left: 20px;">UI Design</h3>
+                        </div>
+                        <div class="subsubbox2">Intermediate</div>
+                    </div>
+                </div>
+                
+            </div>
+        <div class="backend">
+            <h3 style="font-size: 30px;text-align: center;color:#010718;margin-block: 20px;">Backend Development</h3>
+            <div class="box1">
+                <div class="subbox1">
+                    <div class="subsubbox1">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h3 style="letter-spacing: 2px;font-weight: 200;margin-left: -20px;">MySQL</h3>
+                    </div>
+                    <div class="subsubbox2">Experienced</div>
+                </div>
+                <div class="subbox2">
+                    <div class="subsubbox1">
+                        <i class="fa-solid fa-circle-check"style="margin-left: 30px;"></i>
+                        <h3 style="letter-spacing: 2px;font-weight: 200;margin-left: 20px;">ExpressJS</h3>
+                    </div>
+                    <div class="subsubbox2">Basic</div>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="subbox1">
+                    <div class="subsubbox1">
+                        <i class="fa-solid fa-circle-check "style="margin-left: 2px;"></i>
+                        <h3 style="letter-spacing: 2px;font-weight: 200;margin-left: -15px;">NodeJS</h3>
+                    </div>
+                    <div class="subsubbox2">Basic</div>
+                </div>
+                <div class="subbox2">
+                    <div class="subsubbox1">
+                        <i class="fa-solid fa-circle-check"style="margin-left: -30px;"></i>
+                        <h3 style="letter-spacing: 2px;font-weight: 200;margin-left: -95px;">Git</h3>
+                    </div>
+                    <div class="subsubbox2">Basic</div>
+                </div>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+    <div class="project" id="project">
+        <h4>Browse My Recent</h4>
+        <h1>Projects</h1>
+        <div class="projectbox">
+            <div class="p1">
+                <div class="imagebox">
+                    <img src="image/projectone.png" >
+                </div>
+                <h2 style="text-align: center;margin-block: 25px;">Weather App</h2>
+                <div class="buttonbox">
+                    <div class="github">Github</div>
+                    <div class="livedemo">Live Demo</div>
+                </div>
+            </div>
+            <div class="p2">
+                <div class="imagebox">
+                    <img src="image/projecttwo.jpg" >
+                </div>
+                <h2 style="text-align: center;margin-top: 25px;font-size: 22px;">Movie Recommandation System</h2>
+                <div class="buttonbox">
+                    <div class="github">Github</div>
+                    <div class="livedemo">Live Demo</div>
+                </div>
+            </div>
+            <div class="p3">
+                <div class="imagebox">
+                    <img src="image/projectthree.jpg" >
+                </div>
+                <h2 style="text-align: center;margin-block: 25px;">Recipi App</h2>
+                <div class="buttonbox">
+                    <div class="github">Github</div>
+                    <div class="livedemo">Live Demo</div>
+                </div>
+            </div>
+            <div class="p4">
+                <div class="imagebox">
+                    <img src="image/projectfour.jpg" >
+                </div>
+                <h2 style="text-align: center;margin-top: 25px;">Home Automation System</h2>
+                <div class="buttonbox">
+                    <div class="github">Github</div>
+                    <div class="livedemo">Live Demo</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h4>Get in Touch</h4>
+        <h1>Contact Me</h1>
+        <div class="contactbox">
+            <div class="link">
+                <div class="link1">
+                    <i class="fa-brands fa-github"></i>
+                    <h2 style="margin-left: -90px;">Github</h2>
+                    
+                </div>
+                <div class="linkname" style="color: white;">tanmana183</div>
+                
+                    <div class="link1">
+                        <i class="fa-solid fa-envelope" style="margin-left:-10px;"></i>
+                        <h2 style="margin-left: -100px;">Gmail</h2>
+                        
+                    </div>
+                    
+               
+                <div class="linkname"style="color: white;">dastanmana2002@gmail.com</div>
+                
+                    <div class="link1">
+                        <i class="fa-brands fa-linkedin"style="margin-left:15px;"></i>
+                        <h2 style="margin-left: -70px;">Linkedin</h2>
+                        
+                    </div>
+                    
+               
+                <div class="linkname"style="color: white;">TANMANA DAS</div>
+                
+                    <div class="link1">
+                        <i class="fa-brands fa-facebook"style="margin-left:30px;"></i>
+                        <h2 style="margin-left: -50px;">Facebook</h2>
+                        
+                    </div>
+                    
+               
+                <div class="linkname"style="color: white;">Tanmana Das</div>
+            </div>
+            <div class="vl"></div>
+            <div class="message">
+              
+               <form action="">
+               
+                <label for="fname" style="color: white;">Name:</label>
+                <input type="text" id="fname" name="fname" style="margin-left: 100px;"placeholder="Enter your name"><br><br>
+                <label for="lname"style="color: white;">Phone Number:</label>
+                <input type="text" id="lname" name="lname" placeholder="Phone Number"><br><br>
+                <label for="email"style="color: white;">Email Id:</label>
+                <input type="email" id="email" name="email" style="margin-left: 85px;"placeholder="Email-id"><br><br>
+                <label for="message"style="color: white;">Message:</label>
+                <input type="text" id="message" name="message" style="margin-left: 80px;height: 100px;"placeholder="Enter your Message"><br><br>
+                <div class="submit">
+                    
+                    Send Message
+                    <i class="fa-solid fa-chevron-right" style="color: #010718;margin-top: 5px;"></i>
+                </div>
+               </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/82138f62c8.js" crossorigin="anonymous"></script>
+</html>
